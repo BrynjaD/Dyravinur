@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lokaverkefni</title>
+    <link rel="stylesheet" type="text/css" href="lokaverkefni.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-min.css">
+    <link href='https://fonts.googleapis.com/css?family=Supermercado+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <?php include="login.php"  include="signup.php" ?>
+  </head>
+  <body>
+  <div class="container">
+  	<div class="row">
+  		<div class="col-sm-12">
+		  <a href="index.html"><div id ="banner"><img src="Drawing.png" alt="logo" class="logo"><img src="transpBanner.png" alt="Banner Image" class="bannerimg" ></div></a>  
+		  <header class="cf">
+        <div id ="nav">
+  		  	<ul>
+    			  <li><a href="#">Ýmsar upplýsingar</a></li>
+    			  <li><a href="#">Fóður</a></li>
+    			  <li><a href="#">Um okkur</a></li>
+    			  <li><a href="#">Hafa samband</a></li>
+    			  <li id="login">
+                	<a id="login-trigger" href="#">
+                    Skrá mig inn <span>&#x25BC;</span>
+                	</a>
+                	<div id="login-content">
+                    	<form action="login.php">
+                        	<fieldset id="inputs">
+    	                        <input id="username" type="email" name="username" placeholder="Netfang" required>   
+    	                        <input id="password" type="password" name="password" placeholder="Lykilorð" required>
+    	                    </fieldset>
+    	                    <fieldset id="actions">
+    	                        <input type="submit" id="submit" value="Log in">
+    	                        <label><input type="checkbox" checked="checked"> Halda mér innskráðri/um</label>
+    	                    </fieldset>
+                    	</form>
+                	</div>                     
+            	</li>
+              <li id="nyskraning">
+                <a id="nyskraning-trigger" href="#">Nýskráning <span>&#x25BC;</span></a>
+                <div id="nyskraning-content">
+                      <form action="signup.php" method="POST">
+                          <fieldset id="inputs">
+                              <input id="fullName" type "text" name="fullName" placeholder="Fullt Nafn" required>
+                              <input id="username" type="email" name="username" placeholder="Netfang" required>   
+                              <input id="password" type="password" name="password" placeholder="Lykilorð" required>
+                              <input id="kennitala" type "text" name="kennitala" placeholder="Kennitala" required>
+                              <input id="simanr" type="text" name="simanr" placeholder="Símanúmer" required>
+                              <input id="heimilisfang" type="text" name="heimilisfang" placeholder="Heimilisfang" required>
+                              <input id="postnr" type="text" name="postnr" placeholder="Póstnúmer" required>
+                              <input id="baejarfelag" type="text" name="baejarfelag" placeholder="Bæjarfélag" required>
+                              <input id="landshluti" type="text" name="landshluti" placeholder="Landshluti" required>
+                          </fieldset>
+                          <fieldset id="signActions">
+                              <input type="submit" id="signSubmit" value="Skrá mig">
+                          </fieldset>
+                      </form>
+                  </div>              
+
+              </li>
+  			   </ul>
+  		  </div>
+      </header> 
+	  	</div>
+	</div>
+	<div class="row">
+		<h2 class="header1">Velkomin á síðuna!</h2>
+
+		<p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus metus sem, id cursus metus ullamcorper eu. Proin convallis lacinia pulvinar. Suspendisse ullamcorper felis nec justo feugiat, vel semper ligula posuere. Curabitur ante ligula, auctor ac consectetur vitae, rutrum id neque. Quisque congue mi id turpis iaculis aliquam. Cras tincidunt enim lectus, sed efficitur arcu varius ut. Nullam at purus posuere, viverra felis nec, faucibus lacus. Vestibulum mattis risus id risus sagittis dignissim. Duis tempus leo venenatis, tincidunt sem vitae, elementum neque. Nulla facilisi. Nullam efficitur risus ac laoreet ultricies.</p>
+	</div>
+  </div>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="lokaverkefniJS.js"></script>
+  </body>
+</html>
